@@ -16,7 +16,7 @@ DESTDIR=$1
 mkdir -p $DESTDIR
 cd $DESTDIR
 
-git clone git://github.com/raspberrypi/tools.git
+git clone https://github.com/raspberrypi/tools.git
 
 # TODO
 echo Execute this: PATH=$PATH:$DESTDIR/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian/bin
