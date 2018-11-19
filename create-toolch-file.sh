@@ -21,6 +21,9 @@ echo "SET(CMAKE_SYSTEM_VERSION 1)" >> $TOOLCHAIN_FILE
 # specify the cross compiler
 echo "SET(CMAKE_C_COMPILER \"$COMPILER_DIR_PREFIX-gcc\")" >> $TOOLCHAIN_FILE
 echo "SET(CMAKE_CXX_COMPILER \"$COMPILER_DIR_PREFIX-g++\")" >> $TOOLCHAIN_FILE
+
+echo "SET(CMAKE_C_FLAGS \"${CMAKE_C_FLAGS} -g -O0\")" >> $TOOLCHAIN_FILE
+
 # where is the target environment
 echo "SET(CMAKE_FIND_ROOT_PATH \"$SYSROOT_DIR\")" >> $TOOLCHAIN_FILE
 # search for programs in the build host directories
